@@ -9185,7 +9185,6 @@ public abstract class EuclidianController implements SpecialPointsListener {
 
 		lastMousePressedTime = System.currentTimeMillis();
 
-		app.storeUndoInfoIfSetCoordSystemOccured();
 		app.maySetCoordSystem();
 
 		scriptsHaveRun = false;

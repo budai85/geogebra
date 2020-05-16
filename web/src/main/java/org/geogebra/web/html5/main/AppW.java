@@ -1077,6 +1077,8 @@ public abstract class AppW extends App implements SetLabels, HasLanguage {
 
 	@Override
 	public final void fileNew() {
+		resetPages();
+		clearConstruction();
 		clearMedia();
 		resetUniqueId();
 		setLocalID(-1);
@@ -1087,8 +1089,6 @@ public abstract class AppW extends App implements SetLabels, HasLanguage {
 		}
 
 		resetUI();
-		resetPages();
-		clearConstruction();
 		resetPenTool();
 	}
 
